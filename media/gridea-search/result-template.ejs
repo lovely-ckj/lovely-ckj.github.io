@@ -1,0 +1,38 @@
+<div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          搜索结果
+        </h2>
+      </div>
+	  <% posts.forEach(function(post) { %>
+		<div class="motion-warpper">
+		  <div class="tag-post-node">
+			<a href="<%= post.link %>">
+				<h1 style="display:inline">
+				  <%= post.dateFormat.substring(5)%>
+				  <small><%= post.title %></small>
+				</h1>
+			</a>
+			<% post.tags.forEach(function(tag) { %>
+			  <a href="<%= tag.link %>" class="post-tag">
+				# <%= tag.name %>&nbsp;&nbsp;
+			  </a>
+			<% }); %>
+			<br/>
+			<blockquote>
+				<% if (themeConfig.showFeatureImage && post.feature) { %>
+					<a href="<%= post.link %>" class="post-feature-image" style="background-image: url('<%= post.feature %>')">
+					</a>
+				<% } %>
+				<div class="post-abstract">
+					<%- post.searchedPreview %>
+				</div>
+			</blockquote>
+		  </div>
+		</div>
+	  <% }); %>
+    </div>
+  </div>
+</div>
