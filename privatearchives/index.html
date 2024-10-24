@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="Exber&#39;s Blog">
+<meta name="theme-color" content="#000">
+<title>Exber&#39;s Blog</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1729773317641">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.11.1/dist/katex.min.css">
+
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.jsdmirror.com/npm/mathjax@3.2.2/es5/mml-chtml.min.js"></script>
+
+
+
+
+
+
+  <meta name="description" content="Exber&#39;s Blog">
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    <script>function calchash(str){var bse=23,p=998244353,res=0,f=true;for(var i=0;i<str.length;i++)res=(res*bse+str.charCodeAt(i))%p;return res;}function password(){var _0xc62af3=68238616,ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i].trim();if(c.indexOf("password")==0){var val=c.substring("password=".length,c.length);if(val==_0xc62af3) return "";}}var val=prompt("请输入密码");while(true){if(val==null){f=false;break;}else if(calchash(val)==_0xc62af3){document.cookie="password="+calchash(val)+"; path=/";break;}else{val=prompt("密码错误");}}if(!f){document.body.innerHTML="";window.history.back(1);}return "";}document["\u0077\u0072\u0069\u0074\u0065"](password());</script>
+<style>
+.gridea-search-input{
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 0 15px 0 30px;
+    border: 1px solid #e3e3e3;
+    border-radius: 15px;
+    color: #273849;
+    outline: none;
+    transition: border-color 0.2s ease;
+    background: #fff url("data:image/svg+xml,%3Csvg class='icon' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='80' height='65'%3E%3Cpath d='M936.265 854.34L757.43 675.52c46.499-63.168 74.02-141.125 74.02-225.398 0-210.1-170.945-381.039-381.055-381.039S69.346 240.023 69.346 450.122c0 210.105 170.94 381.043 381.049 381.043 84.275 0 162.235-27.52 225.405-74.019l178.833 178.819c11.27 11.265 26.036 16.903 40.813 16.903 14.777 0 29.543-5.638 40.819-16.903 22.536-22.546 22.536-59.09 0-81.625zM163.14 450.122C163.14 291.733 292 162.87 450.396 162.87s287.261 128.862 287.261 287.252c0 158.39-128.867 287.252-287.261 287.252S163.14 608.512 163.14 450.122z' fill='%23C4C4C4'/%3E%3C/svg%3E") 8px 7px no-repeat;
+    background-size: 20px;
+    vertical-align: middle !important;
+}
+.gridea-search-input:focus {
+  border-color: #666666;
+  right: 0;
+}
+</style>
+
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/../private" class="brand">
+              <span>Exber&#39;s Blog</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">Can&#39;t go up</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="/../private" target="_self">
+                    首页
+                  </a>
+                
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="/../privatetags" target="_self">
+                    按标签筛选
+                  </a>
+                
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="/../privatearchives" target="_self">
+                    时间线
+                  </a>
+                
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="https://csacademy.com/app/graph_editor/" target="_self">
+                    图论编辑器
+                  </a>
+                
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="https://cn.overleaf.com/" target="_self">
+                    OverLeaf（在线编辑 LaTeX）
+                  </a>
+                
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                
+                  <a href="http://yuantiji.ac/zh/" target="_self">
+                    原题机
+                  </a>
+                
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+				<a href="javascript:void(0);">
+					<span class="language" data-lan="search">
+						<div class="gridea-search-div">
+							<form id="gridea-search-form" action="https://lovely-ckj.github.io/privatesearch/">
+								<input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q"/>
+							</form>
+						</div>
+					</span>
+				</a>
+			</li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">lovely_ckj</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>洛谷 @lovely_ckj</p>
+      
+        <p>Codeforces @lovely-ckj</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/privatearchives/">
+        
+        <span class="site-item-stat-count">284</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/privatetags/">
+        <span class="site-item-stat-count">38</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://lovely-ckj.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+  
+    <div class="sidebar-item right-motion sidebar-item-friends">
+      
+        <p class="friends-title"><i class="fa fa-ship"></i> 友链</p>
+      
+      <div class="friends-box">
+        
+          <p>
+            <a href="https://www.cnblogs.com/lyz09-blog/">Lyz09 的博客</a>
+          </p>
+        
+      </div>
+    </div>
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box box-shadow-wrapper">
+          <section class="section archives-section bg-color posts-expand">
+            
+
+<div class="bg-color">
+  <div class="archive-timeline-box">
+    <div class="archive-timeline-title">
+      
+        <h2 class="language" data-lan="archives" data-count="73">非常好！目前共计73篇文章，继续努力！</h2>
+      
+    </div>
+    
+	  
+		  
+		  
+			<div class="node-title">
+			  <h2 class="tag-year">2024</h2>
+			</div>    
+			
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noip-ji-xun-yu-le-sai-6-lis-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  10-24
+				  <small>【2024NOIP集训娱乐赛6】LIS 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noip-mo-ni-sai-49-jian-dan-ti-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  10-06
+				  <small>【2024NOIP模拟赛49】简单题 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/bi-ke-2024-gong-yi-zhong-chou-sai-1-ke-ai-lu-jing-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-29
+				  <small>【必可2024公益众筹赛1】可爱路径 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2025noi-mo-ni-sai-19-b-jiang-de-guo-zi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-29
+				  <small>【2025NOI模拟赛19】b酱的果子 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noip-mo-ni-sai-44-tiao-qi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-24
+				  <small>【2024NOIP模拟赛44】跳棋 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2025noi-mo-ni-sai-15-xu-lie-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-10
+				  <small>【2025NOI模拟赛15】序列 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noip-mo-ni-sai-36-xiang-si-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-09
+				  <small>【2024NOIP模拟赛36】相似 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-bei-jing-ji-xun-5-xie-zuo-yu-gou-tong-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-04
+				  <small>【2023北京集训5】写作与沟通 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-bei-jing-ji-xun-4-dai-shu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-04
+				  <small>【2023北京集训4】代数 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2025noi-mo-ni-sai-12-mou-pao-pai-xu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-04
+				  <small>【2025NOI模拟赛12】冒泡排序 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-bei-jing-ji-xun-1-apers-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-20
+				  <small>【2023北京集训1】apers 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noip-mo-ni-sai-33-shu-shang-jing-ji-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-19
+				  <small>【2024NOIP模拟赛33】树上竞技 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024-shu-qi-acm05-you-xi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-14
+				  <small>【2024暑期ACM05】游戏 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2025noi-mo-ni-sai-01-qing-wa-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-08
+				  <small>【2025NOI模拟赛01】青蛙 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2025noi-mo-ni-sai-02-tu-shang-de-you-xi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-05
+				  <small>【2025NOI模拟赛01】图上的游戏 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024-shu-jia-ji-xun-acm2-gcompetition-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-11
+				  <small>【2024暑假集训ACM2】G.Competition 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024-guang-dong-ji-xun-01-1-specie-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  05-25
+				  <small>【2024广东集训01-1】specie 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noi-mo-ni-sai-11-xiang-lian-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  02-26
+				  <small>【2024NOI模拟赛11】项链 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noi-mo-ni-sai-08-er-fen-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  02-21
+				  <small>【2024NOI模拟赛08】二分 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noi-mo-ni-sai-07-bao-sou-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  02-21
+				  <small>【2024NOI模拟赛07】爆搜 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2024noi-mo-ni-sai-07-qian-dao-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  02-21
+				  <small>【2024NOI模拟赛07】签到 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+			<div class="node-title">
+			  <h2 class="tag-year">2023</h2>
+			</div>    
+			
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022noip-mo-ni-sai-20-xiao-z-de-zuo-ye-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  11-15
+				  <small>【2022NOIP模拟赛20】小Z的作业 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-37-shang-ren/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  10-26
+				  <small>【2023NOI模拟赛37】商人 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-36-a-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  10-25
+				  <small>【2023NOI模拟赛36】A 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noip-mo-ni-sai-22-zhai-chao-wen-dang-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-19
+				  <small>【2023NOIP模拟赛22】摘抄文档 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-27-mei-zhu-zuo-ye-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-07
+				  <small>【2023NOI模拟赛27】美术作业 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-26-kai-kai-che-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  09-05
+				  <small>【2023NOI模拟赛26】开开车 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noip-mo-ni-sai-09-bu-yao-li-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  08-08
+				  <small>【2023NOIP模拟赛09】补幺梨 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-cheng-du-ji-xun/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-19
+				  <small>【2023成都集训模拟赛04】op 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noip-mo-ni-sai-06-wo-shi-c-ti-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-17
+				  <small>【2023NOIP模拟赛06】我是 C 题 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-24-sui-ji-chu-fa-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-05
+				  <small>【2023NOI模拟赛24】随机除法 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-23-you-xian-kong-jian-tiao-yue-li-lun-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-05
+				  <small>【2023NOI模拟赛23】有限空间跳跃理论 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-22-shang-dian-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  07-03
+				  <small>【2023NOI模拟赛22】商店 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-21-da-bao-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  05-04
+				  <small>【2023NOI模拟赛21】打包 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-wu-han-ji-xun-mo-ni-sai-7-mie-guo-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023武汉集训模拟赛7】灭国 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-wu-han-ji-xun-mo-ni-sai-03-jia-xin-tang-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023武汉集训模拟赛03】嘉心糖 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-13-count-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛13】count 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-11-bai-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛11】白 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-11-fa-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛11】發 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-10-ge-zi-de-lao-jia-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛10】鸽子的老家 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-13-sequence-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛13】sequence 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-09-dian-fen-zhi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛09】点分治 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-08-jie-ri-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛08】节日 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-08-you-xi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛08】游戏 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-08-pai-xu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023NOI模拟赛08】排序 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-noi-mo-ni-sai-04-xiao-f-yu-you-xi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023 NOI 模拟赛 04】小 F 与游戏 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023-noi-mo-ni-sai-01-mo-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-15
+				  <small>【2023 NOI 模拟赛 01】膜 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-duo-xiao-lian-ce-2-hua-chuan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 多校联测 2】划船 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-46-palindrome-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 模拟赛 46】Palindrome 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-42-y-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 模拟赛 42】Y 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-40-fan-zhuan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 模拟赛 40】翻转 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-39-liu-chu-qi-shan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 模拟赛 39】六出祁山 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-38-shu-huan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-14
+				  <small>【2022 NOIP 模拟赛 38】数环 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-34-ju-zhen-bo-yi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 34】矩阵博弈 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-29-pai-lie-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 29】排列 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-28-gou-shu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 28】构树 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-25-qu-a-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 25】取啊 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-25-ming-zi-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 25】名字 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-24-qiu-he-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 24】求和 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-22-xuan-ju-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 22】选举 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-19-juan-ji-zhi-wang-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 19】卷积之王 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-18-bi-sai-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 NOIP 模拟赛 18】比赛 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-14-a-qu-mo-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-08
+				  <small>【2022 noip 模拟赛 14】A. 取模 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-8-c-tui-xiu-ji-hua-ii-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-02
+				  <small>【2022 NOIP 模拟赛 8】C. 退休计划 II 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022-noip-mo-ni-sai-3-c-dan-diao-zhan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  04-02
+				  <small>【2022 NOIP 模拟赛 3】C. 单调栈 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-19-color-on-board-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-31
+				  <small>【2023NOI模拟赛19】color on board 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-18-song-fen-ti-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-29
+				  <small>【2023NOI模拟赛18】送分题 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-17-ni-zhuan-han-shu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-29
+				  <small>【2023NOI模拟赛17】逆转函数 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-17-chu-ti-ren-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-28
+				  <small>【2023NOI模拟赛17】出题人 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022noi-mo-ni-sai-7t1-suo-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-27
+				  <small>【2022NOI模拟赛7T1】锁 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022noi-mo-ni-sai-3t1-huan-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-26
+				  <small>【2022NOI模拟赛3T1】环 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2023noi-mo-ni-sai-15-bu-jian-bu-san-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-24
+				  <small>【2023NOI模拟赛15】不见不散 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+		  
+		  
+		  <a href="https://lovely-ckj.github.io/post/2022noi-mo-ni-sai-01-lou-wang-zhi-yu-zuo-ti-ji-lu/">
+			<div class="motion-warpper tag-archive-node">
+			  <div class="tag-node">
+				<h1>
+				  03-21
+				  <small>【2022NOI模拟赛01】漏网之鱼 做题记录</small>
+				</h1>
+			  </div>  
+		  </div>
+		  </a>
+	    
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+	  
+    
+  </div>
+</div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+    
+        <div class="pisces back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "true";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "我太菜了嘛~";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdmirror.com/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+
+
+
+
+</html>
